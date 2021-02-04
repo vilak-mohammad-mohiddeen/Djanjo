@@ -38,3 +38,14 @@
   - tests.py:testing
   - views.py:All logics
   
+# Steps
+- Register the app created in settings.py file in 
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    **'MyApp'**,
+]
