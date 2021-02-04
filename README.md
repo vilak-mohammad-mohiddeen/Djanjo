@@ -5,4 +5,4 @@
 - pip install django
 
 #### to know whether django is installed or not
-- django-admin --version
+- django-admin   --version
