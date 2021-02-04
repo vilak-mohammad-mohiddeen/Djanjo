@@ -63,7 +63,13 @@ urlpatterns = [
 - **in views.py**
   - from django.shortcuts import render
 from django.http import HttpResponse
-# Create your views here.
 def home(req):
 	return HttpResponse("Hello")
 
+# Dynamic Url localhost:8000/home/moin
+- ->Welcome moin
+	- path('about/<str:user>',views.about,name="about")
+	-def about(req,user):
+	return HttpResponse("Hello"+user)
+	
+# **Step create templates folder in MyApp App**
