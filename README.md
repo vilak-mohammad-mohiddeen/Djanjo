@@ -49,3 +49,21 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     **'MyApp'**,
 ]
+
+# Inorder to get localhost:8000/home
+- **in urls.py**
+  - from django.contrib import admin
+from django.urls import path
+from MyApp import views
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('home/',views.home,name="home"),
+]
+- **in views.py**
+  - from django.shortcuts import render
+from django.http import HttpResponse
+# Create your views here.
+def home(req):
+	return HttpResponse("Hello")
+
