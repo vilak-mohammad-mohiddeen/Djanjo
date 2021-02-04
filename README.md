@@ -73,3 +73,6 @@ def home(req):
 	return HttpResponse("Hello"+user)
 	
 # **Step create templates folder in MyApp App**
+
+- def myhtml(req):
+	- return render(req,'MyApp/myhtml.html')
