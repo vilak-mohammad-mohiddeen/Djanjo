@@ -33,7 +33,8 @@
   **migrate is use to convert class to table**
   - init.py: packages
   - admin.py : registering the table which are in form of class by which we can view the db
-  -apps.py:app related info
-  -models.py:contains all classes 
-  -tests.py:testing
+  - apps.py:app related info
+  - models.py:contains all classes 
+  - tests.py:testing
+  - views.py:All logics
   
