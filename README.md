@@ -68,7 +68,7 @@ def home(req):
 
 # Dynamic Url localhost:8000/home/moin
 - ->Welcome moin
-	- path('about/<str:user>',views.about,name="about")
+	- path('about/**< str:user >**',views.about,name="about")
 	-def about(req,user):
 	return HttpResponse("Hello"+user)
 	
