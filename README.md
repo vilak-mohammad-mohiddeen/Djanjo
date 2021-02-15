@@ -73,6 +73,9 @@ def home(req):
 	return HttpResponse("Hello"+user)
 	
 # **Step create templates folder in MyApp App**
+- create a folder templates in your App
+- inside that,create a folder name with same App name
+- inside them store the .html files
 
 - def myhtml(req):
 	- return render(req,'MyApp/myhtml.html')
